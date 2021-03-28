@@ -1,4 +1,4 @@
-package ejercicios;
+package ejercicios_guia01;
 
 import java.io.PrintStream;
 import java.util.Iterator;
@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 import java.lang.Math;
 
-public class Main {
+public class Ejercicios01 {
 
 	static Scanner scan = new Scanner(System.in); //Variable scanner para ingreso de datos
 	
