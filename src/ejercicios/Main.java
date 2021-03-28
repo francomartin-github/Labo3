@@ -8,10 +8,9 @@ import java.lang.Math;
 
 public class Main {
 
-	private static PrintStream salida = System.out;
-	static Scanner scan = new Scanner(System.in);;
+	static Scanner scan = new Scanner(System.in); //Variable scanner para ingreso de datos
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) { //metodo principal main
 		// TODO Auto-generated method stub
  
 		System.out.println("Bienvenido a la Guia 0");
@@ -127,6 +126,8 @@ public class Main {
 
 	 private static void haciendoEj01() {
 		 
+		 //Ingresar y mostrar variables
+		 
 		 int N = 4;
 		 double A = 5.7;
 		 char C = 'D';
@@ -141,6 +142,8 @@ public class Main {
 	 }
 
 	 private static void haciendoEj02() {
+		
+		 //Ingresar, operar y mostrar variables
 		 
 		int X=5, Y=4;
 		double N=4.5, M=5.5;
@@ -159,6 +162,8 @@ public class Main {
 
 	 private static void haciendoEj03() {
 		 
+		//Ingresar valor, incrementarlo, decrementarlo y multiplicarlo. Mostrarlo 
+		 
 		int N=5;
 		System.out.println("N inicial = " + N);
 		N+=77;
@@ -168,6 +173,8 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj04() {
+		 
+		//Ingresar valores e intercambiarlos 
 		 
 		int A=2, B=4, C=6, D=8;
 		int aux;
@@ -184,6 +191,8 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj05() {
+		
+		//Indicar si un numero es par o impar 
 		 
 		int A=15;	
 		if (A%2 == 0) {
@@ -195,6 +204,8 @@ public class Main {
 	 }
  
 	 private static void haciendoEj06() {
+		
+		//Indicar si un numero es positivo, negativo o nulo 
 		 
 		Random random = new Random();
 		//int B = random.nextInt();
@@ -218,19 +229,23 @@ public class Main {
 	 
 	 private static void haciendoEj07() {
 		 
+		//Indicar si un numero es positivo, negativo, multiplo de 5 o multiplo de 10 
+		 
 		Random random = new Random();
         int C = random.nextInt();
 
-        String positivo = (C > 0) ? "positivo" : "negativo";
+        String positivo = (C > 0) ? "positivo" : "negativo"; //ternario, si condicion es true almacena primera opcion en String, sino la segunda
         String paridad = (C % 2 == 0) ? "par" : "impar";
         String multiplo5 = (C % 5 == 0) ? "multiplo de 5" : "no es multiplo de 5";
         String multiplo10 = (C % 10 == 0) ? "multiplo de 10" : "no es multiplo de 10";
 
-        salida.println(String.format("C: %s, es un numero %s, %s, %s y %s.", C, positivo, paridad, multiplo5, multiplo10)); 
+        System.out.println((String.format("C: %s, es un numero %s, %s, %s y %s.", C, positivo, paridad, multiplo5, multiplo10))); 
 	 }
 	 
 	 private static void haciendoEj08() {
-		 
+		
+		//Ingresa nombre y saluda
+		
 		String nombre;
 		System.out.println("Ingrese nombre: ");
 		nombre = scan.next();
@@ -238,6 +253,8 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj09() {
+		
+		//INgresa numero e indica su doble y su triple
 		 
 		System.out.println("Ingrese un numero: ");
 		int num = scan.nextInt();
@@ -246,6 +263,9 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj10() {
+		 
+		 //Convierte temperatura ingresada de Farenheit a Celsius
+		 
 		 System.out.println("Ingrese una temperatura en grados Farenheit para convertir a Celsius: ");
 		 double faren = scan.nextDouble();
 		 double celsius = (faren - 32) * (5.0 / 9.0);
@@ -253,6 +273,9 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj11() {
+		 
+		 //Calcula longitud de circunferencia con radio ingresado
+		 
 		 System.out.println("Ingrese el radio de una circunferencia (en centimetros): ");
 		 double radio = scan.nextDouble();
 		 double pi = Math.PI;
@@ -262,6 +285,9 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj12() {
+		 
+		 //Convierte velocidad ingresada de Km/h a M/s
+		 
 		 System.out.println("Ingrese una velocidad en KM/h para pasar a M/s: ");
 		 double veloK = scan.nextDouble();
 		 double veloM = veloK*1000/3600;
@@ -269,6 +295,9 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj13() {
+		 
+		 //Calcula hipotenusa ingresando dos catetos
+		 
 		 System.out.println("Ingrese la medida del primer cateto: ");
 		 double cat1 = scan.nextDouble();
 		 System.out.println("Ingrese la medida del otro cateto: ");
@@ -279,6 +308,9 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj14() {
+		 
+		 //Calcula volumen de esfera ingresando radio
+		 
 		 System.out.println("Ingrese el radio de una esfera (en centimetros) para calcular su volumen: ");
 		 double radio = scan.nextDouble();
 		 double volumen = (4.0/3.0) * Math.PI * Math.pow(radio, 3);
@@ -286,6 +318,9 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj15() {
+		 
+		 //Calcula area de triangulo ingresando lados
+		 
 		 System.out.println("Ingrese longitud del lado uno del triangulo: ");
 		 double l1 = scan.nextDouble();
 		 System.out.println("Ingrese longitud del lado dos del triangulo: ");
@@ -300,6 +335,9 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj16() {
+		 
+		 //Muestra las cifras de un numero de 3 cifras ingresado
+		 
 		 System.out.println("Ingrese numero de 3 cifras: ");
 		 int num = scan.nextInt();
 		 
@@ -314,6 +352,9 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj17() {
+		 
+		 //Muestra las cifras de posicion impar de un numero de 5 cifras ingresado
+		 
 		 System.out.println("Ingrese numero de 5 cifras: ");
 		 int num = scan.nextInt();
 		 while (num > 99999 || num < 10000) {
@@ -330,6 +371,9 @@ public class Main {
 	 }
 	 
 	 private static void haciendoEj18() {
+		 
+		 //Controla que el formato de una hora ingresada sea valido
+		 
 		 System.out.println("Ingrese hora: ");
 		 int H = scan.nextInt();
 		 System.out.println("Ingrese minutos: ");
